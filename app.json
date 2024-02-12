@@ -1,7 +1,7 @@
 {
-  "name": "sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ",
+  "name": "صانع بوت التيرمكس ، الخاص بسورس الساحر",
   "description": "A Telegram Bot to generate Telethon and Pyrogram String Session.",
-  "logo": "https://telegra.ph/file/4384143211a0905238ce4.jpg",
+  "logo": "https://telegra.ph/file/a5f5941b53538d6f0c20f.jpg",
   "keywords": [
     "telegram",
     "bot",
@@ -11,40 +11,38 @@
     "buildpacks": [{
     "url": "heroku/python"
   }],
-  "repository": "https://github.com/omar1211/session",
+  "repository": "https://github.com/Qrh9/SaherIQ",
   "env": {
     "ENVIRONMENT": {
-      "description": "Don't change ANYTHING.",
+      "description": "لتغير شي",
       "required": true,
       "value": "ANYTHING"
     },
     "API_ID": {
-      "description": "Get this value from my.telegram.org/apps.",
+      "description": "الايبي ايدي هنا my.telegram.org/apps.",
       "required": true,
       "value": ""
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org/apps.",
+      "description": "الايبي هاش my.telegram.org/apps.",
       "required": true,
       "value": ""
     },
     "OWNER_ID": {
-      "description": "Telegram id of the person who will known as owner of the bot.",
       "required": true,
-      "value": ""
+      "value": "5835316914"
     },
     "MONGO_DB_URI": {
-      "description": "Get this value from cloud.mongodb.com",
+      "description": "تكدر تعوفه فارغ او تستخرجه منا cloud.mongodb.com",
       "required": true,
       "value": ""
     },
     "MUST_JOIN": {
-      "description": "Username of a group or channel for which you want to set force sub.(without @)",
-      "required": true,
-      "value": "DevilsHeavenMF"
+      "required": false,
+      "value": "SXYO3"
     },
     "BOT_TOKEN": {
-      "description": "Get this value from @BotFather",
+      "description": "توكن البوت @BotFather",
       "required": true,
       "value": ""
     }
