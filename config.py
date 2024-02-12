@@ -8,7 +8,7 @@ load_dotenv()
 API_ID = os.getenv("API_ID", "").strip()
 API_HASH = os.getenv("API_HASH", "").strip()#
 BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
-DATABASE_URL = os.getenv("DATABASE_URL", "").strip()
+DATABASE_URL = os.getenv("DATABASE_URL", "postgres://hbbudrdw:WQ3Yef0yJF3T-jUK8uDxBRH7ls1e-yxM@jelani.db.elephantsql.com/hbbudrdw" )
 MUST_JOIN = os.getenv("MUST_JOIN", "https://t.me/SXYO3")
 
 if not API_ID:
