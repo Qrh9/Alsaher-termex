@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 
 load_dotenv()
-
+OWNER_ID= 5835316914
 API_ID = os.getenv("API_ID", "").strip()
 API_HASH = os.getenv("API_HASH", "").strip()#
 BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
