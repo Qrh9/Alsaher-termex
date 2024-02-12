@@ -11,20 +11,7 @@
     "buildpacks": [{
     "url": "heroku/python"
   }],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "Eco"
-    }
-  },
-  "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
+  
   "repository": "https://github.com/Qrh9/SaherIQ",
   "env": {
     "ENVIRONMENT": {
