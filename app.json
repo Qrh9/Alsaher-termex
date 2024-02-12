@@ -31,6 +31,7 @@
     "MONGO_DB_URI": {
       "description": "تكدر تعوفه فارغ او تستخرجه منا cloud.mongodb.com",
       "required": false,
+      "value": ""
     },
     "BOT_TOKEN": {
       "description": "توكن البوت @BotFather",
