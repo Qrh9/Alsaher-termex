@@ -9,5 +9,5 @@ API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN")
 OWNER_ID = 5835316914
 
-MONGO_DB_URI = getenv("MONGO_DB_URI")
+DATABASE_URL = os.getenv("DATABASE_URL", "").strip()
 MUST_JOIN = getenv("MUST_JOIN", None)
