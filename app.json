@@ -28,18 +28,9 @@
       "required": true,
       "value": ""
     },
-    "OWNER_ID": {
-      "required": true,
-      "value": "5835316914"
-    },
     "MONGO_DB_URI": {
       "description": "تكدر تعوفه فارغ او تستخرجه منا cloud.mongodb.com",
-      "required": true,
-
-    },
-    "MUST_JOIN": {
       "required": false,
-      "value": "SXYO3"
     },
     "BOT_TOKEN": {
       "description": "توكن البوت @BotFather",
