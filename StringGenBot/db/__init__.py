@@ -1,7 +1,14 @@
-from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
+from env import DATABASE_URL
 
-import config
+from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker, scoped_session
 
 
-mongo = MongoCli(config.MONGO_DB_URI)
-db = mongo.StringGen
+def start() -> scoped_session:
+    engine = create_engine(DATABASE_URL)
+
+    BASE.metadata.bind = engine
+    BASE.metadata.create_all(engine)
+    return scoped_session(sessionmaker(bind=engine, autoflush=False))
+
