@@ -10,7 +10,7 @@ from time import time
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from config import OWNER_ID
+from env import OWNER_ID
 
 
 async def aexec(code, client, message):

@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 
-from config import OWNER_ID
+from env import OWNER_ID
 
 
 def filter(cmd: str):

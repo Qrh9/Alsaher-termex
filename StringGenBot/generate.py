@@ -21,7 +21,7 @@ from telethon.errors import (
     PasswordHashInvalidError
 )
 
-import config
+import env
 
 
 
@@ -63,8 +63,8 @@ async def generate_session(bot: Client, msg: Message, telethon=False, is_bot: bo
     if await cancelled(api_id_msg):
         return
     if api_id_msg.text == "/skip":
-        api_id = config.API_ID
-        api_hash = config.API_HASH
+        api_id = env.API_ID
+        api_hash = env.API_HASH
     else:
         try:
             api_id = int(api_id_msg.text)
