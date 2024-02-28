@@ -1,13 +1,12 @@
 import env
 import logging
 from pyrogram import Client, idle
-from pyrogram import raw
-from pyromod import listen
-from pyrogram.errors import ApiIdInvalid, ApiIdPublishedFlood, AccessTokenInvalid, BadMsgNotification
+from pyromod import listen  # type: ignore
+from pyrogram.errors import ApiIdInvalid, ApiIdPublishedFlood, AccessTokenInvalid
 
 logging.basicConfig(
     level=logging.WARNING, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-)
+)  # type: ignore
 
 app = Client(
     ":memory:",
@@ -17,22 +16,15 @@ app = Client(
     plugins=dict(root="StringSessionBot"),
 )
 
-async def synchronize_time():
-    await app.send(raw.functions.updates.GetState())
 
 if __name__ == "__main__":
     print("Starting the bot")
     try:
         app.start()
-
-        await synchronize_time()
     except (ApiIdInvalid, ApiIdPublishedFlood):
         raise Exception("Your API_ID/API_HASH is not valid.")
     except AccessTokenInvalid:
         raise Exception("Your BOT_TOKEN is not valid.")
-    except BadMsgNotification as e:
-        print(f"BadMsgNotification error: {e}")
-
     uname = app.get_me().username
     print(f"@{uname} is now running!")
     idle()
