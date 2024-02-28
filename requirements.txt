@@ -5,4 +5,4 @@ pyrogram==2.0.100
 python-dotenv==1.0.0
 telethon==1.27.0
 tgcrypto==1.2.5
-sqlalchemy
+SQLAlchemy==1.4.*
