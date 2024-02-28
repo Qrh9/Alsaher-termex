@@ -17,7 +17,7 @@ app = Client(
 )
 
 
-if __name__ == "__bot__":
+if __name__ == "__main__":
     print("Starting the bot")
     try:
         app.start()
