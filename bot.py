@@ -14,7 +14,7 @@ app = Client(
     api_id=env.API_ID,
     api_hash=env.API_HASH,
     bot_token=env.BOT_TOKEN,
-    plugins=dict(root="StringGenBot"),
+    plugins=dict(root="StringSessionBot"),
 )
 
 async def synchronize_time():
@@ -33,6 +33,8 @@ async def start_bot():
     except BadMsgNotification as e:
         print(f"BadMsgNotification error: {e}")
         # Handle the error appropriately
+
+    # Client has been started, can now safely use it
     me = await app.get_me()
     uname = me.username
     print(f"@{uname} is now running!")
