@@ -31,3 +31,5 @@ async def start(bot: Client, msg: Message):
         ),
         disable_web_page_preview=True,
     )
+    
+print ("حقوق الساحر🤙🏻🤙🏻")
