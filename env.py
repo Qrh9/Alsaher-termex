@@ -23,9 +23,6 @@ if not API_HASH:
 if not BOT_TOKEN:
     print("No BOT_TOKEN found. Exiting...")
     raise SystemExit
-if not DATABASE_URL:
-    print("No DATABASE_URL found. Exiting...")
-    raise SystemExit
 
 try:
     API_ID = int(API_ID)
