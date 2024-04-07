@@ -24,8 +24,7 @@ async def start_bot():
     print("Starting the bot")
     try:
         await app.start()
-        # Synchronize client time with Telegram servers
-        await synchronize_time()
+        # await synchronize_time()  # Comment out or remove this line
     except (ApiIdInvalid, ApiIdPublishedFlood):
         raise Exception("Your API_ID/API_HASH is not valid.")
     except AccessTokenInvalid:
