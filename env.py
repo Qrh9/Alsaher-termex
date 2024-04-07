@@ -7,7 +7,10 @@ load_dotenv()
 OWNER_ID= 5835316914
 API_ID = 29594794
 API_HASH = "d4b492451c79aad8eee7592ebc2220d4"
-BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+
+if not BOT_TOKEN:
+    BOT_TOKEN = input("Please enter your bot token: ").strip()
 DATABASE_URL ="postgres://hbbudrdw:WQ3Yef0yJF3T-jUK8uDxBRH7ls1e-yxM@jelani.db.elephantsql.com/hbbudrdw"
 MUST_JOIN = "https://t.me/SXYO3"
 
