@@ -29,6 +29,3 @@ try:
 except ValueError:
     print("API_ID is not a valid integer. Exiting...")
     raise SystemExit
-
-if "postgres" in DATABASE_URL and "postgresql" not in DATABASE_URL:
-    DATABASE_URL = DATABASE_URL.replace("postgres", "postgresql")
