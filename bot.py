@@ -24,21 +24,25 @@ async def start_bot():
     print("Starting the bot")
     try:
         await app.start()
-        # await synchronize_time()  # Comment out or remove this line
+
     except (ApiIdInvalid, ApiIdPublishedFlood):
         raise Exception("Your API_ID/API_HASH is not valid.")
     except AccessTokenInvalid:
         raise Exception("Your BOT_TOKEN is not valid.")
     except BadMsgNotification as e:
         print(f"BadMsgNotification error: {e}")
-        # Handle the error appropriately
 
-    # Client has been started, can now safely use it
+
+
     me = await app.get_me()
     uname = me.username
     print(f"@{uname} is now running!")
-    idle()
-    app.stop()
+
+
+    await idle()  
+
+    
+    await app.stop()  
     print("Bot stopped. Alvida!")
 
 if __name__ == "__main__":
