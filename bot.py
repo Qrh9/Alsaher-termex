@@ -14,7 +14,7 @@ app = Client(
     api_id=env.API_ID,
     api_hash=env.API_HASH,
     bot_token=env.BOT_TOKEN,
-    plugins=dict(root="StringSessionBot"),
+    plugins=dict(root="StringGenBot"),
 )
 
 async def synchronize_time():
