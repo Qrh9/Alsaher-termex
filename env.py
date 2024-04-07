@@ -11,7 +11,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 if not BOT_TOKEN:
     BOT_TOKEN = input("Please enter your bot token: ").strip()
-DATABASE_URL ="postgres://hbbudrdw:WQ3Yef0yJF3T-jUK8uDxBRH7ls1e-yxM@jelani.db.elephantsql.com/hbbudrdw"
+
 MUST_JOIN = "https://t.me/SXYO3"
 
 if not API_ID:
